@@ -44,9 +44,9 @@ namespace Cronix
         /// Constructs the Cron class.
         /// </summary>
         /// <param name="configs">The coniguration to use.</param>
-        public Cron(string identity = "Cron app", IConfigurations configs = null)
+        public Cron(IConfigurations configs, string identity = "Cron app")
         {
-			Configs = configs ?? new Configurations();
+            Configs = configs ?? new Configurations();
             Identity = identity;
         }
 
