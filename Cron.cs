@@ -1,12 +1,5 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Reflection.Metadata.Ecma335;
-using System.Text;
-using System.Threading.Tasks;
 using Cronix.Extensions;
 using System.Text.RegularExpressions;
-using System.Reflection.Emit;
 
 namespace Cronix
 {
@@ -56,7 +49,6 @@ namespace Cronix
         public void Start()
         {
             PID = Environment.ProcessId;
-
             // Start the clock.
             StartTime = DateTime.Now;
             Log("Starting " + Identity + ".");
@@ -141,7 +133,7 @@ namespace Cronix
 
             // Creating the pid file.
             Log("Process id is '" + PID + "'.");
-            Log("Creating PID file.");
+            LogInfo("Creating PID file.");
             try
             {
                 File.WriteAllText(Configs.PID, PID.ToString());
