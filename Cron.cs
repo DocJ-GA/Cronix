@@ -53,7 +53,6 @@ namespace Cronix
         /// <summary>
         /// Starts the cron app with the message.
         /// </summary>
-        /// <param name="message">The message to use for the start of the log. Default is "Starting App."</param>
         public void Start()
         {
             PID = Environment.ProcessId;
