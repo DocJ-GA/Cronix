@@ -28,7 +28,7 @@ namespace Cronix
         /// <summary>
         /// The configuration file.
         /// </summary>
-		public IConfigurations Configs { get; private set; }
+	public IConfigurations Configs { get; private set; }
 
         /// <summary>
         /// The title of the cronix application.
